@@ -80,10 +80,10 @@ bool compare(Node<type>* lhs, Node<type>* rhs) {
     if (lhs == nullptr and rhs == nullptr)
         return true;
     else if ((lhs == nullptr and rhs != nullptr) or (lhs != nullptr and rhs == nullptr)) {
-    cout << "Lists are not the same size!" << endl;
-    return false;
+        cout << "Lists are not the same size!" << endl;
+        return false;
     }
     else
-    return (lhs->data == rhs->data) and compare(lhs->next, rhs->next);
+        return (lhs->data == rhs->data) and compare(lhs->next, rhs->next);
 }
 ```
